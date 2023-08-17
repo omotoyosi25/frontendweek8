@@ -12,10 +12,11 @@ function roman(){
 
     let rf
 
-    data.length === 1 ? rf = un[data] : data.length === 2 ? rf = tn[data[0]] + un[data[1]] : data.length === 3 ? rf = hu[data[0]] + tn[data[1]] + un[data[2]] : data.length === 4 && data[0] > 4 ? rf = th[data[0]] + hu[data[1]] + tn[data[2]] + un[data[3]] : rf = 'not yet'
+    data.length === 1 ? rf = un[data] : data.length === 2 ? rf = tn[data[0]] + un[data[1]] : data.length === 3 ? rf = hu[data[0]] + tn[data[1]] + un[data[2]] : data.length === 4 ? rf = th[data[0]] + hu[data[1]] + tn[data[2]] + un[data[3]] : rf = 'not yet'
 
     // alert(rf)
     para.textContent = rf
 }
 
 btn.addEventListener('click', roman)
+// && data[0] > 4
